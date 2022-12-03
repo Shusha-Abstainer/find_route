@@ -62,6 +62,7 @@ class CityDeleteView(SuccessMessageMixin, DeleteView):
     # def get(self, request, *args, **kwargs):
     #     messages.success(request, 'Город успешно удален')
     #     return self.post(request, *args, **kwargs)
+    # Не понимаю почему не пускает с переопределением метода get в post без template!!!
 
 class CityListView(ListView):
     paginate_by = 2
